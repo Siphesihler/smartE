@@ -1,0 +1,97 @@
+body {
+    background-color: #299B63; 
+    font-size: 14px;
+}
+.card {
+    width: 40%;
+    margin: 100px auto;
+}
+.login-page {
+    width: 30%;
+}
+.card-box {
+    background: #ffffff;
+    display: flex;
+}
+.profile-left {
+    flex-basis: 100%;
+    padding: 40px 60px;
+}
+.card h1 {
+    margin-bottom: 10px;
+}
+.card p {
+    margin-bottom: 40px;
+}
+.card .input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.card .input-row .input-group {
+    flex-basis: 100%;
+}
+.card input {
+    width: 90%;
+    border: none;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+.login-page input {
+    width: 100%;
+}
+.card textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.card label {
+    margin-bottom: 6px;
+    display: block;
+    color: #299B63;
+}
+.card button{
+    background: #299B63;
+    width: 40%;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-left h3 {
+    color: #299B63;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.card h1 {
+    color: #000000;
+    background: #ffffff;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+}
+.member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    color: red;
+}
+.failure{
+    color: red;
+}
+.success{
+    color: green;
+}

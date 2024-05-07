@@ -1,0 +1,361 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.topbar {
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    width: 100%;
+    padding: 0 20px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    z-index: 1;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo h2 {
+    color: #299B63;
+}
+
+
+.user {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    justify-self: right;
+}
+
+
+/* sidebar */
+
+.sidebar {
+    position: fixed;
+    top: 60px;
+    width: 260px;
+    height: calc(100% - 60px);
+    background: #299B63;
+    overflow-x: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.sidebar ul {
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    width: 100%;
+    list-style: none;
+}
+
+.sidebar ul li:hover {
+    background: #fff;
+}
+
+.sidebar ul li:hover a {
+    color: #299B63;
+}
+.active {
+    background: #ffffff99;
+}
+
+
+.sidebar ul li a {
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a i {
+    min-width: 60px;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+/* main */
+
+.main {
+    position: absolute;
+    top: 60px;
+    width: calc(100% - 260px);
+    min-height: calc(100vh - 60px);
+    left: 260px;
+    background: #f5f5f5;
+}
+
+.container-fluid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.card-Dash {
+    color: #000000;
+    position: relative;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 4px #9E9E9E;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-self: center;
+    padding: 10px;
+}
+
+.Electricity {
+    background-color: #f2cd56;
+    
+}
+
+.Water {
+    background-color: #85cff5;
+}
+
+.card-Dash i {
+    position: absolute;
+    top: 0;
+    left: 90%;
+}
+
+.sm-font {
+    font-size: 18px;
+}
+
+.med-font {
+    font-size: 22px;
+}
+
+.large-font {
+    font-size: 40px;
+}
+
+
+/* charts */
+
+.charts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.chart {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    width: 90%;
+    justify-self: center;
+    justify-content: center;
+}
+
+.card {
+    width: 80%;
+    margin: 100px auto;
+}
+.card-box {
+    background: #ffffff;
+    display: flex;
+}
+.card-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.card-right {
+    flex-basis: 40%;
+    padding: 40px;
+    background: #299B63;
+    color: #ffffff;
+}
+.recharge-right {
+    background: #85cff5;
+    color: #000000;
+}
+.recharge-left {
+    background: #f2cd56;
+    color: #000000;
+}
+.profile-left {
+    flex-basis: 100%;
+    padding: 40px 60px;
+}
+.recharge-left {
+    flex-basis: 50%;
+    padding: 40px 60px;
+}
+.recharge-right {
+    flex-basis: 50%;
+    padding: 40px 60px;
+}
+.card h1 {
+    margin-bottom: 10px;
+}
+.card p {
+    margin-bottom: 40px;
+}
+.card .input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.card .input-row .input-group {
+    flex-basis: 45%;
+}
+.recharge .input-row .input-group {
+    flex-basis: 65%;
+}
+.card input {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+.card textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.card label {
+    margin-bottom: 6px;
+    display: block;
+    color: #299B63;
+}
+.card button{
+    background: #299B63;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.recharge button {
+    background: #ffffff;
+    color: #000000;
+}
+.card-left h3 {
+    color: #299B63;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.recharge-left h3 {
+    color: #000000;
+}
+.card h1 {
+    color: #000000;
+    background: #ffffff;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #000000;
+    padding: 10px;
+}
+.card-right h3 {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.card tr td:first-child {
+    padding-right: 20px;
+}
+.card tr td {
+    padding-top: 20px;
+}
+.recharge {
+    margin-bottom: 20px;
+}
+
+@media (max-width:1115px) {
+    .sidebar {
+        width: 60px;
+    }
+    .main {
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+}
+
+@media (max-width:880px) {
+    /* .topbar {
+        grid-template-columns: 1.6fr 6fr 0.4fr 1fr;
+    } */
+    .fa-bell {
+        justify-self: left;
+    }
+    .container-fluid {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .charts {
+        grid-template-columns: 1fr;
+    }
+    .Electricity {
+        margin-bottom: 0px; 
+    }
+    .doughnut-chart {
+        padding: 50px;
+    }
+    #doughnut {
+        padding: 50px;
+    }
+}
+
+@media (max-width:500px) {
+    .topbar {
+        grid-template-columns: 1fr 5fr 0.4fr 1fr;
+    }
+    .logo h2 {
+        font-size: 20px;
+    }
+    .search {
+        width: 80%;
+    }
+    .search input {
+        padding: 0 20px;
+    }
+    .fa-bell {
+        margin-right: 5px;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .card-box {
+        display: inline-block;
+    }
+    .Electricity {
+        margin-bottom: 0px; 
+    }
+    .doughnut-chart {
+        padding: 10px;
+    }
+    #doughnut {
+        padding: 0px;
+    }
+    .user {
+        width: 40px;
+        height: 40px;
+    }
+}
